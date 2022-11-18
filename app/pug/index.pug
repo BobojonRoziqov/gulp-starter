@@ -1,0 +1,29 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        include include/_link
+        title Pug file
+    body 
+        header.header
+            .header__container
+                .header__row
+                    .header__logo
+                        a(href="/")
+                            img(src="image/logo.svg", alt="logo")
+                    .header__menu
+                        ul
+                            li
+                                a(href="#") About
+                            li
+                                a(href="#") Services
+                            li
+                                a(href="#") Works
+                            li
+                                a(href="#") Blog
+                    .header__btn
+                        a(href="#")
+                            i.bi.bi-list 
+        include include/_script

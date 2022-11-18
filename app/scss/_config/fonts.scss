@@ -1,0 +1,5 @@
+@import "_mixins/font-face";
+
+@include font-face("red-regular","../font/RedHatDisplay-Regular",400);
+@include font-face("red-medium","../font/RedHatDisplay-Medium",500);
+@include font-face("red-bold","../font/RedHatDisplay-Bold",700);

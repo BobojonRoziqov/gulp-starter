@@ -1,0 +1,23 @@
+// Settings
+@import "_config/var";
+
+// Fonts
+@import "_config/fonts";
+
+// Mobile
+@import "_config/mobile";
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: $default;
+    color: $text;
+}
+
+// Libs
+@import "libs/*.scss";
+
+// Style
+@import "style/*.scss";
+
+

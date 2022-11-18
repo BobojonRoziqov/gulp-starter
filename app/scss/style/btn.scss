@@ -1,0 +1,13 @@
+.btn{
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: orange;
+    padding: 15px 40px;
+    border-radius: 10px;
+    border: none;
+    @include media(md){
+        font-size: 15px;
+        background-color: green;
+    }
+}

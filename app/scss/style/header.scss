@@ -1,0 +1,48 @@
+.header{
+    font-family: sans-serif;
+    &__container{
+        @include make-container();
+        @include max_width_container();
+    }
+    &__row{
+        @include make-row();
+    }
+    &__logo{
+        padding-top: 30px;
+        @include make-col-ready();
+        @include media-breakpoint-up(md) {
+            @include make-col(1);
+        }
+        
+    }
+
+    &__menu{
+        padding-top: 73px;
+        padding-left: 54px;
+        @include make-col-ready();
+        @include media-breakpoint-up(md) {
+            @include make-col(9);
+        }
+        ul{
+            padding: 0;
+            margin: 0;
+            li{
+                display: inline-block;
+                margin-right: 34px;
+                a{
+                    text-decoration: none;
+                    font-size: 20px;
+                    font-family: $medium;
+                }
+            }
+        }
+    }
+    &__btn{
+        @include make-col-ready();
+        @include media-breakpoint-up(md) {
+            @include make-col(2);
+        }
+        text-align: right;
+        padding-top: 25px;
+    }
+}
